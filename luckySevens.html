@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Lucky Seven</title>
+        <meta charset=
+        "utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- JavaScript file-->
+        <script src="luckySevens.js"></script>
+        <!-- CSS file -->
+        <link rel="stylesheet" type="text/css" href="luckySevensStyle.css">
+           
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 offset-md-3">
+                    <h1>Lucky Sevens</h1>
+                    <p>As long as there is money, the game will continue playing.<br/>
+                       Each round, the program rolls a virtual pair of dice for the user.<br/>
+                       If the sum of the 2 dice is equal to 7, the player wins $4 otherwise, the player loses $1.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 offset-md-4">
+                    <form name="betting" onsubmit="return play()" class="form-inline">
+                        <div class="form-group">
+                            <label for="startingMoney">Starting Bet:  $</label>
+                            <input type="number" class="form-control" id="startingBet" style="width:200px;">
+                        </div> 
+                
+                        <button type="submit" id="submitButton" class="btn btn-success">Play</button>
+                    </form>
+                </div>
+            </div>      
+                
+                
+                
+                
+            <div class="row">
+                <div class="col-sm-6 offset-md-4">
+                    <table id="resultTable" class="table table-striped" style="display:none;">
+                        <thead>
+                            <th><h2 id="resultHeading"></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Starting Bet</td>
+                                <td><span id="resultStartingBet"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Total Rolls Before Broke</td>
+                                <td><span id="resultRollsBeforeBroke"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Highest Amount Won</td>
+                                <td><span id="resultHighestWon"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Roll Count at Highest Amount Won</td>
+                                <td><span id="resultRollsHighestAmount"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+                    <img src="images/dice.jpg" alt="Dices" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+                
+        
+        
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <!-- Bootstrap for JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    </body>
+</html>

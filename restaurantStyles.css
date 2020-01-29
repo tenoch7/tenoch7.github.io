@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+body {
+    font-family: 'Play', sans-serif; 
+    /* color; */
+}
+#mainbackground {
+    background-color: rgb(95, 173, 173);
+}
+footer {
+    text-align:center ;
+}
+a {
+    text-decoration:underline;
+}
+a:visited {
+    color:black;
+}
+a:hover {
+    font-weight: bold;
+}
+a:active{
+    text-decoration: none;
+}
+
+html {
+    /* background-color:; */
+    color: white;
+}
+#navigation {
+    /* background-color: ; */
+}
+#title {
+    font-family: 'Russo One', sans-serif;
+}
+footer {
+    font-family: 'Russo One', sans-serif;
+}
+.container {
+    font-family: 'Play', sans-serif;
+}
+
+#beverages {
+   
+}
+#beverages tr:nth-child(even) {
+    background-color: rgb(171, 226, 226);
+}
+
